@@ -1,0 +1,10 @@
+config:
+  infrastructure:
+    messaging:
+      sqs:
+        endpoint: http://localhost:4566
+        name: cancelamento-requisicoes
+    database:
+      dynamodb:
+        endpoint: http://localhost:4566
+        table: Cancelamento

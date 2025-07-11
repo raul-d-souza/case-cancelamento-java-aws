@@ -34,7 +34,7 @@ public class PersistCancelamentoDynamodbAdapter implements IPersistCancelamentoP
     public void persist(CancelamentoPersistence persistence) {
         try {
             Map<String, AttributeValue> item = new HashMap<>();
-            item.put("id", AttributeValue.builder().s(persistence.requestID()).build());
+            item.put("requestID", AttributeValue.builder().s(persistence.requestID()).build());
             item.put("userID", AttributeValue.builder().s(persistence.userID()).build());
             item.put("status", AttributeValue.builder().s(persistence.status()).build());
             item.put("datetime", AttributeValue.builder().s(persistence.datetime()).build());
